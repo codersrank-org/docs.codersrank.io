@@ -50,7 +50,7 @@ module.exports = {
             },
             {
               label: 'API',
-              to: 'docs/api/introduction',
+              to: 'docs/api/',
             },
           ],
         },
