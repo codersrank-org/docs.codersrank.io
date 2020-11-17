@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'CodersRank Developers Portal',
-  tagline: 'Tools and services for developers',
+  title: 'CodersRank For Developers',
+  tagline: 'CodersRank tools and services for developers',
   url: 'https://developers.codersrank.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -9,7 +9,7 @@ module.exports = {
   projectName: 'developers-portal', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Developers Portal',
+      title: 'Developers',
       logo: {
         alt: 'CodersRank Logo',
         src: 'img/logo.svg',
