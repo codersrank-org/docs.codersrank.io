@@ -10,6 +10,11 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  --ifm-hero-background-color: #f1f2f3;
+}
+
+.heroBanner img {
+  height: 128px;
 }
 
 @media screen and (max-width: 966px) {

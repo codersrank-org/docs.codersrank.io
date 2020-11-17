@@ -1,12 +1,17 @@
 ---
-id: skills-chart
+id: skills-chart-widget
 title: Skills Chart Widget
 sidebar_label: Skills Chart
+custom_edit_url: https://github.com/codersrank-org/skills-chart-widget/edit/main/README.md
 ---
+
+
+<!-- DOCS_START -->
+
 
 CodersRank Skills Chart Widget is a web component that allows you easily integrate nice looking skills chart from your [CodersRank](https://codersrank.io) profile to your personal website:
 
-<img src="https://github.com/codersrank-org/skills-chart-widget/raw/main/preview.png" />
+<img src="https://raw.githubusercontent.com/codersrank-org/skills-chart-widget/main/preview.png" />
 
 ## Install from NPM
 

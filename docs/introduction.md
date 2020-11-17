@@ -1,8 +1,8 @@
 ---
 id: introduction
-title: API Introduction
+title: Introduction
 sidebar_label: Introduction
-slug: /api/
+slug: /
 ---
 
 Coming soon

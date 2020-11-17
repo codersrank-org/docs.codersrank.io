@@ -1,12 +1,17 @@
 ---
-id: summary
+id: summary-widget
 title: Summary Widget
 sidebar_label: Summary
+custom_edit_url: https://github.com/codersrank-org/summary-widget/edit/master/README.md
 ---
+
+
+<!-- DOCS_START -->
+
 
 Codersrank Summary Widget is a web component that allows you integrate widget with your [CodersRank](https://codersrank.io) profile summary to your personal website:
 
-<img src="https://github.com/codersrank-org/summary-widget/raw/master/preview.png" />
+<img src="https://raw.githubusercontent.com/codersrank-org/summary-widget/master/preview.png" />
 
 ## Install from NPM
 
@@ -142,4 +147,3 @@ Yes please! See the [contributing guidelines](https://github.com/codersrank-org/
 ## Licence
 
 This project is licensed under the terms of the [MIT license](https://github.com/codersrank-org/summary-widget/blob/master/LICENSE).
-

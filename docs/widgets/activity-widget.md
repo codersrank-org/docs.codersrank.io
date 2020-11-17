@@ -1,9 +1,14 @@
 ---
-id: activity
+id: activity-widget
 title: Activity Widget
 sidebar_label: Activity
-slug: /
+custom_edit_url: https://github.com/codersrank-org/activity-widget/edit/main/README.md
 ---
+
+
+<!-- DOCS_START -->
+
+
 CodersRank Activity Widget is a web component that allows you easily integrate nice looking activity chart from your [CodersRank](https://codersrank.io) profile to your personal website:
 
 <img src="https://raw.githubusercontent.com/codersrank-org/activity-widget/main/preview.png" />

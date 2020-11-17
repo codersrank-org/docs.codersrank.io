@@ -1,8 +1,23 @@
 module.exports = {
-  docsSidebar: {
-    Widgets: ['widgets/activity', 'widgets/skills-chart', 'widgets/summary', 'widgets/work-experience'],
-    API: ['api/introduction'],
-    Docusaurus: ['doc1'],
-    Features: ['mdx'],
-  },
+  docs: [
+    {
+      type: 'doc',
+      id: 'introduction',
+    },
+    {
+      type: 'category',
+      label: 'Widgets',
+      items: [
+        'widgets/activity-widget',
+        'widgets/skills-chart-widget',
+        'widgets/summary-widget',
+        'widgets/work-experience-widget',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'API',
+      items: ['api/introduction'],
+    },
+  ],
 };

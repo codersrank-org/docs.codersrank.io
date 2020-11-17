@@ -1,6 +1,6 @@
 module.exports = {
   title: 'CodersRank Developers Portal',
-  tagline: 'CodersRank tools and services for developers',
+  tagline: 'Tools and services for developers',
   url: 'https://developers.codersrank.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -21,7 +21,12 @@ module.exports = {
           label: 'Docs',
           position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'right'},
+        { to: 'blog', label: 'Blog', position: 'right' },
+        {
+          label: 'Forum',
+          href: 'https://forum.codersrank.io',
+          position: 'right',
+        },
         {
           href: 'https://github.com/codersrank-org/',
           label: 'GitHub',
@@ -36,8 +41,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Widgets',
+              label: 'Introduction',
               to: 'docs/',
+            },
+            {
+              label: 'Widgets',
+              to: 'docs/widgets/activity-widget',
             },
             {
               label: 'API',
@@ -49,16 +58,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Forum',
+              href: 'https://forum.codersrank.io',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/codersrank',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/codersrank',
             },
           ],
         },
@@ -71,7 +80,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/codersrank-org/',
             },
           ],
         },
@@ -86,8 +95,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/codersrank-org/developers-portal/edit/master/',
+          editUrl: 'https://github.com/codersrank-org/developers-portal/edit/master/',
         },
         blog: {
           showReadingTime: true,
