@@ -12,6 +12,9 @@
   overflow: hidden;
   --ifm-hero-background-color: #f1f2f3;
 }
+html[data-theme='dark'] .heroBanner {
+  --ifm-hero-background-color: #121212;
+}
 
 .heroBanner img {
   height: 128px;

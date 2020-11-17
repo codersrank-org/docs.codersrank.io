@@ -25,9 +25,11 @@
   */
   --ifm-code-font-size: 95%;
 }
-.footer,
 .footer--dark {
   --ifm-footer-background-color: #132433;
+}
+html[data-theme='dark'] .footer--dark {
+  --ifm-footer-background-color: #0d141a;
 }
 
 .docusaurus-highlight-code-line {
