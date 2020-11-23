@@ -19,15 +19,15 @@ const fetchFile = (url) =>
   });
 
 const buildWidgetDocs = async () => {
-  const repos = [
-    'activity-widget',
-    'skills-chart-widget',
-    'summary-widget',
-    'work-experience-widget',
-  ];
-  const branches = ['main', 'main', 'master', 'master'];
-  repos.forEach(async (repo, index) => {
-    const branch = branches[index];
+  const repos = {
+    'activity-widget': 'main',
+    'portfolio-widget': 'master',
+    'skills-chart-widget': 'main',
+    'summary-widget': 'master',
+    'work-experience-widget': 'master',
+  };
+  Object.keys(repos).forEach(async (repo) => {
+    const branch = repos[repo];
     let remoteContent = await fetchFile(
       `https://raw.githubusercontent.com/codersrank-org/${repo}/${branch}/README.md`,
     );
@@ -44,7 +44,7 @@ const buildWidgetDocs = async () => {
     let localContent = fs.readFileSync(filePath, 'utf-8');
     if (localContent.indexOf('<!-- DOCS_START -->') >= 0) {
       localContent = localContent.split('<!-- DOCS_START -->')[0];
-      localContent = `${localContent}\n<!-- DOCS_START -->\n${remoteContent}`;
+      localContent = `${localContent}<!-- DOCS_START -->${remoteContent}`;
     }
     fs.writeFileSync(filePath, localContent);
   });

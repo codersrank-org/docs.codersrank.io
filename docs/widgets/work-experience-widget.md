@@ -5,9 +5,7 @@ sidebar_label: Work Experience
 custom_edit_url: https://github.com/codersrank-org/work-experience-widget/edit/master/README.md
 ---
 
-
 <!-- DOCS_START -->
-
 
 Codersrank Work Experience Widget is a web component that allows you easily integrate work experience information from your [CodersRank](https://codersrank.io) profile to your personal website:
 

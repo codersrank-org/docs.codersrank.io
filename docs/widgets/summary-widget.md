@@ -5,9 +5,7 @@ sidebar_label: Summary
 custom_edit_url: https://github.com/codersrank-org/summary-widget/edit/master/README.md
 ---
 
-
 <!-- DOCS_START -->
-
 
 Codersrank Summary Widget is a web component that allows you integrate widget with your [CodersRank](https://codersrank.io) profile summary to your personal website:
 
