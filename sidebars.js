@@ -20,5 +20,10 @@ module.exports = {
       label: 'API',
       items: ['api/introduction'],
     },
+    {
+      type: 'category',
+      label: 'Repo Info Extractor',
+      items: ['repo_info_extractor/introduction'],
+    },
   ],
 };
