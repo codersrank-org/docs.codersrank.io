@@ -21,6 +21,7 @@ const fetchFile = (url) =>
 const buildWidgetDocs = async () => {
   const repos = {
     'activity-widget': 'main',
+    'education-widget': 'master',
     'portfolio-widget': 'master',
     'skills-chart-widget': 'main',
     'summary-widget': 'master',
@@ -40,13 +41,15 @@ const buildWidgetDocs = async () => {
         `<img src="https://raw.githubusercontent.com/codersrank-org/${repo}/${branch}/preview.png" />`,
       );
     }
-    const filePath = path.resolve(__dirname, `../docs/widgets/${repo}.md`);
-    let localContent = fs.readFileSync(filePath, 'utf-8');
+    let localContent = fs.readFileSync(
+      path.resolve(__dirname, `../src/widgets/${repo}.md`),
+      'utf-8',
+    );
     if (localContent.indexOf('<!-- DOCS_START -->') >= 0) {
       localContent = localContent.split('<!-- DOCS_START -->')[0];
       localContent = `${localContent}<!-- DOCS_START -->${remoteContent}`;
     }
-    fs.writeFileSync(filePath, localContent);
+    fs.writeFileSync(path.resolve(__dirname, `../docs/widgets/${repo}.md`), localContent);
   });
 };
 
