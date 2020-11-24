@@ -9,6 +9,7 @@ module.exports = {
       label: 'Widgets',
       items: [
         'widgets/activity-widget',
+        'widgets/education-widget',
         'widgets/portfolio-widget',
         'widgets/skills-chart-widget',
         'widgets/summary-widget',
