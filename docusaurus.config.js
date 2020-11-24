@@ -39,11 +39,11 @@ module.exports = {
             },
             {
               label: 'Widgets',
-              to: 'docs/widgets/activity-widget',
+              to: '/widgets/activity-widget',
             },
             {
               label: 'API',
-              to: 'docs/api/',
+              to: '/api/',
             },
           ],
         },
