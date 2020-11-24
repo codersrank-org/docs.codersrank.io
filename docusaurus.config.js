@@ -1,27 +1,20 @@
 module.exports = {
-  title: 'CodersRank For Developers',
-  tagline: 'CodersRank tools and services for developers',
-  url: 'https://developers.codersrank.io',
+  title: 'CodersRank Documentation',
+  tagline: 'CodersRank tools and services documentation',
+  url: 'https://docs.codersrank.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.png',
   organizationName: 'codersrank-org', // Usually your GitHub org/user name.
-  projectName: 'developers-portal', // Usually your repo name.
+  projectName: 'docs.codersrank.io', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Developers',
+      title: 'Documentation',
       logo: {
         alt: 'CodersRank Logo',
         src: 'img/logo.svg',
       },
       items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'right',
-        },
-        { to: 'blog', label: 'Blog', position: 'right' },
         {
           label: 'Forum',
           href: 'https://forum.codersrank.io',
@@ -42,7 +35,7 @@ module.exports = {
           items: [
             {
               label: 'Introduction',
-              to: 'docs/',
+              to: '/',
             },
             {
               label: 'Widgets',
@@ -75,10 +68,6 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/codersrank-org/',
             },
@@ -93,15 +82,10 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/codersrank-org/developers-portal/edit/master/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/codersrank-org/developers-portal/edit/master/blog/',
+          editUrl: 'https://github.com/codersrank-org/docs.codersrank.io/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
