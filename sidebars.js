@@ -1,3 +1,7 @@
+const widgets = require('./src/widgets/widgets.json');
+
+const widgetDocs = Object.keys(widgets).map((repo) => `widgets/${repo}`);
+
 module.exports = {
   docs: [
     {
@@ -7,14 +11,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Widgets',
-      items: [
-        'widgets/activity-widget',
-        'widgets/education-widget',
-        'widgets/portfolio-widget',
-        'widgets/skills-chart-widget',
-        'widgets/summary-widget',
-        'widgets/work-experience-widget',
-      ],
+      items: ['widgets/getting-started', ...widgetDocs],
     },
     {
       type: 'category',
@@ -24,7 +21,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Repo Info Extractor',
-      items: ['repo_info_extractor/introduction'],
+      items: ['repo-info-extractor/introduction'],
     },
   ],
 };

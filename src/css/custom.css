@@ -38,3 +38,34 @@ html[data-theme='dark'] .footer--dark {
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.widget-docs-preview-image {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.preloader {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader:after {
+  content: '';
+  width: 34px;
+  height: 34px;
+  border: 3px solid var(--ifm-color-primary);
+  border-radius: 50%;
+  border-left-color: transparent;
+  animation: preloader-rotate 1s linear infinite;
+  box-sizing: border-box;
+}
+
+@keyframes preloader-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

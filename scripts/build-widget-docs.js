@@ -1,6 +1,7 @@
 const fs = require('fs');
 const http = require('https');
 const path = require('path');
+const widgets = require('../src/widgets/widgets.json');
 
 const fetchFile = (url) =>
   new Promise((resolve, reject) => {
@@ -19,16 +20,8 @@ const fetchFile = (url) =>
   });
 
 const buildWidgetDocs = async () => {
-  const repos = {
-    'activity-widget': 'main',
-    'education-widget': 'master',
-    'portfolio-widget': 'master',
-    'skills-chart-widget': 'main',
-    'summary-widget': 'master',
-    'work-experience-widget': 'master',
-  };
-  Object.keys(repos).forEach(async (repo) => {
-    const branch = repos[repo];
+  Object.keys(widgets).forEach(async (repo) => {
+    const branch = widgets[repo];
     let remoteContent = await fetchFile(
       `https://raw.githubusercontent.com/codersrank-org/${repo}/${branch}/README.md`,
     );
@@ -38,7 +31,7 @@ const buildWidgetDocs = async () => {
     if (remoteContent.indexOf('<img src="preview.png" />') >= 0) {
       remoteContent = remoteContent.replace(
         '<img src="preview.png" />',
-        `<img src="https://raw.githubusercontent.com/codersrank-org/${repo}/${branch}/preview.png" />`,
+        `<img class="widget-docs-preview-image" src="https://raw.githubusercontent.com/codersrank-org/${repo}/${branch}/preview.png" />`,
       );
     }
     let localContent = fs.readFileSync(
