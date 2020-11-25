@@ -39,11 +39,15 @@ module.exports = {
             },
             {
               label: 'Widgets',
-              to: '/widgets/activity-widget',
+              to: '/widgets/',
             },
             {
               label: 'API',
               to: '/api/',
+            },
+            {
+              label: 'Repo Info Extractor',
+              to: '/repo-info-extractor/',
             },
           ],
         },
@@ -53,6 +57,15 @@ module.exports = {
             {
               label: 'Forum',
               href: 'https://forum.codersrank.io',
+            },
+            {
+              label: 'Slack chat',
+              href:
+                'https://codersrank.slack.com/join/shared_invite/enQtNDU5MTI1OTg3NTM2LWJlNWEyOTkxMWYwMTMwMDI2NjMzZWJiMTc0NTJkNDI2OWVkZmE5NjRlZGEyNDg0MTk2OTE5OTliZGM0NjUzYzc',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/codersrank-org/',
             },
             {
               label: 'Facebook',
@@ -65,16 +78,16 @@ module.exports = {
           ],
         },
         {
-          title: 'More',
+          title: 'Resources',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/codersrank-org/',
+              label: 'Blog',
+              href: 'https://blog.codersrank.io',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} CodersRank, Ltd. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} CodersRank, Ltd.`,
     },
   },
   presets: [
