@@ -93,7 +93,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} CodersRank, Ltd.`,
     },
   },
-  plugins: ['@docusaurus/plugin-google-analytics'],
   presets: [
     [
       '@docusaurus/preset-classic',
