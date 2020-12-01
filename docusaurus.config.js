@@ -8,6 +8,9 @@ module.exports = {
   organizationName: 'codersrank-org', // Usually your GitHub org/user name.
   projectName: 'docs.codersrank.io', // Usually your repo name.
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'UA-105624494-1',
+    },
     navbar: {
       title: 'Documentation',
       logo: {
@@ -90,6 +93,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} CodersRank, Ltd.`,
     },
   },
+  plugins: ['@docusaurus/plugin-google-analytics'],
   presets: [
     [
       '@docusaurus/preset-classic',

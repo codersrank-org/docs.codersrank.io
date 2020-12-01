@@ -31,7 +31,7 @@ const buildWidgetDocs = async () => {
     if (remoteContent.indexOf('<img src="preview.png" />') >= 0) {
       remoteContent = remoteContent.replace(
         '<img src="preview.png" />',
-        `<img class="widget-docs-preview-image" src="https://raw.githubusercontent.com/codersrank-org/${repo}/${branch}/preview.png" />`,
+        `<img className="widget-docs-preview-image" src="https://raw.githubusercontent.com/codersrank-org/${repo}/${branch}/preview.png" />`,
       );
     }
     let localContent = fs.readFileSync(
