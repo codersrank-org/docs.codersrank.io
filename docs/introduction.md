@@ -5,7 +5,6 @@ sidebar_label: Introduction
 slug: /
 ---
 
-#  Introduction
 ## Our goal
 Telling your developer story is not easy. It is not just a list of work experience or a bunch of code. Some developers like building opensource products, others spend more time on StackOverflow or write articles and of course, many of us mostly write private code. These are very different experiences.
 At CodersRank we help you to make this process much easier by aggregating your developer activity from different platforms such as GitHub, GitLab, StackOverflow, LinkedIn and we provide the tools (API, Widgets, documentation, community) to create a profile you want.
