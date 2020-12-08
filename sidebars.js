@@ -2,7 +2,7 @@ const widgets = require('./src/widgets/widgets.json');
 const repoInfoExtractor = require('./src/repo-info-extractor/repo-info-extractor.json');
 
 const widgetDocs = Object.keys(widgets).map((repo) => `widgets/${repo}`);
-const repoInfoExtractorDocs = Object.keys(repoInfoExtractor).map((repo) => `widgets/${repo}`);
+const repoInfoExtractorDocs = Object.keys(repoInfoExtractor).map((repo) => `repo-info-extractor/${repo}`);
 
 module.exports = {
   docs: [
@@ -18,7 +18,7 @@ module.exports = {
     {
       type: 'category',
       label: 'API',
-      items: ['api/introduction',],
+      items: ['api/introduction'],
     },
     {
       type: 'category',
