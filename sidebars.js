@@ -20,7 +20,7 @@ module.exports = {
     {
       type: 'category',
       label: 'API',
-      items: ['api/introduction'],
+      items: ['api/introduction', 'api/endpoints'],
     },
     {
       type: 'category',

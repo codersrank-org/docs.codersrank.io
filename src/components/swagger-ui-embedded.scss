@@ -1,0 +1,89 @@
+#swagger-ui-embedded {
+  --ifm-code-color: #fff;
+  --ifm-table-border-width: 0px;
+  --ifm-table-stripe-background: transparent;
+  .swagger-ui {
+    color: inherit;
+  }
+
+  .download-contents {
+    white-space: nowrap;
+    width: 85px;
+  }
+  .model-box {
+    max-width: 100%;
+  }
+  .info {
+    margin-top: 0;
+    margin-bottom: 20px;
+    .description,
+    .info__extdocs {
+      display: none;
+    }
+    .title pre {
+      background-color: transparent !important;
+    }
+    .base-url,
+    .title,
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: inherit;
+    }
+  }
+  .swagger-ui .tab li + li {
+    margin-top: 0;
+  }
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .scheme-container {
+    background: transparent;
+    box-shadow: none;
+    label {
+      color: inherit;
+    }
+  }
+  .opblock-tag,
+  .opblock-tag small {
+    color: inherit;
+  }
+  [data-theme='dark'] & {
+    #large-arrow path,
+    #large-arrow-down path,
+    #expand path {
+      fill: #fff;
+    }
+    .opblock-summary-path,
+    .opblock-summary-description,
+    section.models h4,
+    .model-title,
+    .model {
+      color: inherit;
+    }
+    .model-container {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .opblock-section-header {
+      background: rgba(255, 255, 255, 0.05);
+      h4,
+      label,
+      .btn {
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+    .opblock-body {
+      th,
+      thead td,
+      .response-col_status,
+      .parameter__name,
+      .parameter__type,
+      h4,
+      h5 {
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+  }
+}

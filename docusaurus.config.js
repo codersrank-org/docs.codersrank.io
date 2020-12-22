@@ -93,6 +93,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} CodersRank, Ltd.`,
     },
   },
+  plugins: ['docusaurus-plugin-sass'],
   presets: [
     [
       '@docusaurus/preset-classic',
