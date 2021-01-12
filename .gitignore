@@ -21,3 +21,6 @@ yarn-error.log*
 
 docs/widgets/*.md
 !docs/widgets/getting-started.md
+
+docs/repo-info-extractor/*.md
+!docs/repo-info-extractor/introduction.md
