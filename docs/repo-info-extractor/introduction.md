@@ -9,7 +9,7 @@ If you want to manually extract data from a Git repository this is the tool you 
 It has two parts: `repo_info_extactor` (core) and `multi_repo_info_extractor` (optional)
 # repo_info_extactor
 It is the same implementation we use to automatically extract data from GitHub or GitLab repositories. It gets commit related data from one Git repository for a given author and saves it to a JSON file.
-If you want to try it see the installation guide here.
+If you want to try it see the installation guide [here](https://github.com/codersrank-org/repo_info_extractor).
 
  If you have multiple repositories it is not very convenient to use the `repo_info_extractor`. This is why we created the `multi_repo_info_extractor`.
 # multi_repo_info_extractor
