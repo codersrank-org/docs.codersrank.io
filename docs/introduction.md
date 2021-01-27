@@ -14,6 +14,8 @@ At CodersRank we help you to make this process much easier by aggregating your d
 By default after registration CodersRank collects publicly available data from GitHub. Of course, most of the time it is not the full picture but it enables you to have a basic profile based on your public contribution. This is why we created other sources so you can further improve your profile with other activities.
 
 We designed a system that is transparent and secure. Whether you write public or private code we have you covered. Security and privacy is our main concern. For example, data collected from repositories as obfuscated. Usernames, emails and even filenames are hashed. 
+
+Here you can find more details about what data is extrected and how we do it: [Repo Info Extractor](https://docs.codersrank.io/repo-info-extractor/)
 #### Automatically
 If you want your profile to be automatically updated, then automated integrations will help you. These are the most convenient to use but works only with a limited number of source
 #### Manually
