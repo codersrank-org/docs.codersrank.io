@@ -4,5 +4,6 @@
   "portfolio-widget": "master",
   "skills-chart-widget": "main",
   "summary-widget": "master",
-  "work-experience-widget": "master"
+  "work-experience-widget": "master",
+  "timeline-widget": "main"
 }
