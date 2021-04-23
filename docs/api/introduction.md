@@ -5,4 +5,6 @@ sidebar_label: Introduction
 slug: /api/
 ---
 
-Coming soon
+Coming soon.
+
+If you are looking for the [endpoints](endpoints.mdx), then click over to the next page.
