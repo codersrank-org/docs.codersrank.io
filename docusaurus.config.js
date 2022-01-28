@@ -52,6 +52,10 @@ module.exports = {
               label: 'Repo Info Extractor',
               to: '/repo-info-extractor/',
             },
+            {
+              label: 'Integrations',
+              to: '/integrations/',
+            },
           ],
         },
         {

@@ -2,9 +2,6 @@ const widgets = require('./src/widgets/widgets.json');
 const repoInfoExtractor = require('./src/repo-info-extractor/repo-info-extractor.json');
 
 const widgetDocs = Object.keys(widgets).map((repo) => `widgets/${repo}`);
-const repoInfoExtractorDocs = Object.keys(repoInfoExtractor).map(
-  (repo) => `repo-info-extractor/${repo.replace(/_/g, '-')}`,
-);
 
 module.exports = {
   docs: [
@@ -23,9 +20,13 @@ module.exports = {
       items: ['api/introduction', 'api/endpoints'],
     },
     {
+      type: 'doc',
+      id: 'repo-info-extractor/repo-info-extractor',
+    },
+    {
       type: 'category',
-      label: 'Repo Info Extractor',
-      items: ['repo-info-extractor/introduction', ...repoInfoExtractorDocs],
+      label: 'Integrations',
+      items: ['integrations/bitbucket-integration'],
     },
   ],
 };
