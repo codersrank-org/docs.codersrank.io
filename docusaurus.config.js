@@ -50,11 +50,11 @@ module.exports = {
             },
             {
               label: 'Repo Info Extractor',
-              to: '/repo-info-extractor/',
+              to: '/repo-info-extractor/repo-info-extractor/',
             },
             {
               label: 'Integrations',
-              to: '/integrations/',
+              to: '/bitbucket-integration/',
             },
           ],
         },
